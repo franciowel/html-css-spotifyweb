@@ -20,18 +20,33 @@ main{
     background-color: aqua;
 }
 
+/* SIDE MENU */
 .left-bar{
     width: 250px;
     background-color: lightcoral;
 }
 
+.logo{
+    width: 65%;
+}
+
+/* CENTRAL */
 .home-page{
     width: calc(100% - 250px);
+    background-color: #141922;
 }
 
 /* FOOTER */
 footer{
-    background-color: rgb(255, 0, 0);
-    width: 100%;
+    background-color: #282828;
     height: 80px;
 }
+
+/******* 
+RESPONSIVE RULES 
+
+large desktop sopra 1100px
+medium max 1100px
+small max 700px
+extrasmall max 600px
+*******/
