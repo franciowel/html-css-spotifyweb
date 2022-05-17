@@ -11,6 +11,9 @@
 }
 
 /* COMMONS */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 
 /* MAIN */
 main{
@@ -23,11 +26,42 @@ main{
 /* SIDE MENU */
 .left-bar{
     width: 250px;
-    background-color: lightcoral;
+    background-color: black;
+}
+
+.left-bar-content{
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-bar-content ul{
+    list-style: none;
+    padding-top: 15px;
+    line-height: 30px;
+    font-size: 1.1rem;
+}
+
+.left-bar-content ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.left-bar-content h4{
+    color: white;
+    padding-top: 25px;
+}
+
+.playlist{
+    flex-grow: 1;
 }
 
 .logo{
     width: 65%;
+}
+
+.info-user{
+    color: white;
 }
 
 /* CENTRAL */
