@@ -87,13 +87,13 @@ main{
     height: 60px;
 }
 
+.logo :last-child{
+    display: none;
+}
+
 .nav-bar-link ul li:first-child{
     color: white;
 }
-
-.info-user{
-}
-
 
 .download{
     font-size: 14px;
@@ -135,6 +135,51 @@ footer nav{
 nav ul{
     list-style: none;
     color: inherit;
+}
+
+/* RESPONSIVE COMMAND */
+
+@media screen and (max-width: 600px) {
+    
+    .logo :first-child{
+        display: none;
+    }
+    
+    .logo :last-child{
+        display: block;
+        width: 35px;
+    }
+
+    .left-bar-content{
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .nav-bar-link span{
+        display: none;
+    }
+
+    .playlist{
+        display: none;
+    }
+
+    .info-user{
+        display: flex;
+        flex-direction: column;
+        align-self: 
+    }
+
+    .info-user hr{
+        display: none;
+    }
+
+    .info-user span{
+        display: none;
+    }
+
+    
 }
 
 /******* 
