@@ -31,19 +31,20 @@ main{
 .left-bar{
     width: 250px;
     background-color: black;
-    color: white;
+    color: #a3a3a3;
 }
 
 .left-bar-content{
     padding: 15px 20px;
     display: flex;
     flex-direction: column;
+    height: 100%;
     
 }
 
 .left-bar-content ul{
     list-style: none;
-    padding-top: 15px;
+    padding-top: 12px;
     line-height: 30px;
     font-size: 1.1rem;
 }
@@ -56,10 +57,29 @@ main{
 .left-bar-content h4{
     color: white;
     padding-top: 25px;
+    padding-bottom: 10px;
 }
 
 .playlist{
     flex-grow: 1;
+}
+
+.playlist a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.playlist li{
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.plus{
+    background-color: #a3a3a3;
+    color: black;
+    text-align: center;
+    padding: 5px 5px;
+    display: inline-block;
 }
 
 .logo{
@@ -67,14 +87,26 @@ main{
     height: 60px;
 }
 
-.nav-bar-link{
-    background-color: blue;
-    height: 100px;
+.nav-bar-link ul li:first-child{
+    color: white;
 }
 
 .info-user{
-    height: 60px;
-    background-color: lightblue;
+}
+
+
+.download{
+    font-size: 14px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.username{
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 1.5rem;
 }
 
 
@@ -94,6 +126,7 @@ footer{
 }
 
 footer nav{
+    background-color: #282828;
     justify-content: space-between;
     align-items: center;
     height: 100%;
@@ -101,6 +134,7 @@ footer nav{
 
 nav ul{
     list-style: none;
+    color: inherit;
 }
 
 /******* 
