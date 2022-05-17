@@ -137,6 +137,22 @@ nav ul{
     color: inherit;
 }
 
+.song-section li a{
+    color: #a3a3a3;
+    text-decoration: none;
+}
+
+.command-section{
+    flex-direction: column;
+}
+
+.commands li a{
+    color: #a3a3a3;
+    font-size: 18px;
+    margin: 0 10px;
+
+}
+
 /* RESPONSIVE COMMAND */
 
 @media screen and (max-width: 600px) {
