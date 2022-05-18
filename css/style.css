@@ -533,6 +533,10 @@ nav ul{
         justify-content: space-between;
     }
 
+    .command-volume{
+        max-width: 150px;
+    }
+
     .track-bar-down{
         max-width: 130px;
         height: 4px;
@@ -603,6 +607,10 @@ nav ul{
 
     .volume-bar{
         max-width: 40px;
+    }
+
+    .command-volume{
+        max-width: 120px;
     }
 
     .upgrade{
