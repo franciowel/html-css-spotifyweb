@@ -395,6 +395,7 @@ nav ul{
 /* COMANDI PLAYER PARTE BARRA AUDIO */
 .sound-bar{
     padding-top: 1rem;
+    justify-content: center;
 }
 
 .sound-bar :nth-child(2){
@@ -500,8 +501,8 @@ nav ul{
         padding: 0 0.5rem;
     }
 
-    .command-volume{
-        max-width: 150px;
+    .volume-bar{
+        max-width: 90px;
     }
     .command-volume ul{
         justify-content: space-between;
@@ -525,8 +526,8 @@ nav ul{
         padding: 0.5rem 0.5rem;
     }
 
-    .command-volume{
-        max-width: 100px;
+    .volume-bar{
+        max-width: 60px;
     }
     .command-volume ul{
         justify-content: space-between;
@@ -598,6 +599,10 @@ nav ul{
 
     .reaction{
         flex-direction: column;
+    }
+
+    .volume-bar{
+        max-width: 40px;
     }
 
     .upgrade{
