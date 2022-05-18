@@ -73,6 +73,10 @@ main{
     padding-bottom: 10px;
 }
 
+.nav-bar-link a:hover{
+    color: white;
+}
+
 .nav-icon img{
     width: 14%;
     display: inline;
@@ -89,8 +93,12 @@ main{
 
 .playlist a:hover{
     color: white;
-    text-decoration: underline;
 }
+
+.playlist span:hover{
+    background-color: white;
+}
+
 
 .playlist li{
     line-height: 30px;
@@ -122,6 +130,10 @@ main{
     font-size: 14px;
     color: inherit;
     text-decoration: none;
+}
+
+.download:hover span{
+    color: white;
 }
 
 .username{
@@ -215,18 +227,26 @@ main{
     left: 0;
 }
 
-.play-track{
-    color: #a3a3a3;
-    text-align: center;
-    font-size: 2rem;
-    border: 3px solid #a3a3a3;
+.overlay-artist{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    padding: 15px 2px;
-    height: 50%;
-    width: 50%;
-
     display: none;
-    
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.play-track{
+    height: 100%;
+}
+
+.play-track a{
+    color: #a3a3a3;
+    font-size: 5rem;
+    text-align: center;
+    align-self: center;
 }
 
 .track:hover .overlay{
@@ -234,10 +254,14 @@ main{
     
 }
 
+.track:hover .overlay-artist{
+    display: inline-block;
+    
+}
+
 .track:hover .play-track{
-    display:flex;
     justify-content: center;
-    align-items: center;
+    align-self: center;
 }
 
 .track-img{
@@ -277,7 +301,7 @@ nav ul{
 
 /* BRANO IN RIPRODUZIONE */
 .song-section{
-    /* width: 25%; */
+    width: 25%;
 }
 
 .song-section ul li{
@@ -294,15 +318,37 @@ nav ul{
     width: 15%;
 }
 
+.song-played img:hover{
+    transform: scale(1.2);
+}
+
 .player-title{
     font-weight: bold;
     font-size: 12px;
     margin-left: 0.7rem;
 }
 
+.player-title :hover{
+    color: white;
+    text-decoration: underline;
+}
+
 .player-artist{
     font-size: 12px;
     margin-left: 0.7rem;
+}
+
+.player-artist:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+.reaction a{
+    margin-right: 2rem;
+}
+
+.reaction a:hover{
+    color: white;
 }
 
 /* COMANDI PLAYER */
@@ -321,12 +367,79 @@ nav ul{
     margin: 0 10px;
 }
 
-.play-button{
-    padding: 5px 5px;
-    border: 3px solid #a3a3a3;
-    border-radius: 50%;
+.commands li:hover{
+    transform: scale(1.2);
 }
 
+.play-button :hover{
+    transform: scale(1.5);
+}
+
+/* COMANDI PLAYER PARTE BARRA AUDIO */
+.sound-bar{
+    padding-top: 1rem;
+}
+
+.sound-bar :nth-child(2){
+    padding: 3px 5px;
+}
+
+.track-bar-down{
+    width: 450px;
+    height: 4px;
+    background-color: #a3a3a3;
+}
+
+.track-bar-up{
+    background-color: white;
+    width: 37%;
+    height: 4px;
+}
+
+.track-bar-down:hover .track-bar-up{
+    background-color: greenyellow;
+}
+
+.tracker{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #a3a3a3;
+    flex-direction: row-reverse;
+}
+
+
+/* PARTE VOLUME */
+.command-volume{
+    width: 250px;
+}
+
+.command-volume li a{
+    color: #a3a3a3;
+}
+
+.command-volume ul{
+    justify-content: space-between;
+}
+
+.volume-bar{
+    height: 4px;
+    width: 120px;
+    background-color: #a3a3a3;
+}
+
+.volume-set{
+    height: 4px;
+    width: 60px;
+    background-color:white;
+}
+
+.volume-bar:hover .volume-set{
+    background-color: greenyellow;
+}
+
+/* UPGRADE BAR SUPERIORE */
 .upgrade{
     flex-direction: row-reverse;
     padding: 15px 20px;
@@ -355,10 +468,6 @@ nav ul{
     transform: scale(1.1);
 }
 
-/* PARTE VOLUME */
-.command-volume{
-    /* width: 25%; */
-}
 /* RESPONSIVE COMMAND MEDIUM */
 
 @media screen and (max-width: 1100px){
