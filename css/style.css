@@ -182,6 +182,25 @@ main{
     padding: 0 0.5rem;
 }
 
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 180px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.track:hover .overlay{
+    display: inline-block;
+}
+
+.track-img{
+    position: relative;
+}
+
 .track-img img{
     width: 100%;
     align-self: center;
