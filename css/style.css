@@ -47,12 +47,17 @@ main{
     overflow-y: hidden;
 }
 
+.logo-contain{
+    padding: 15px 20px;
+    height: 50px;
+
+}
+
 .left-bar-content{
     padding: 15px 20px;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    
+    height: calc(100% - 50px);
 }
 
 .left-bar-content ul{
@@ -542,6 +547,11 @@ nav ul{
 
     .left-bar{
         width: 65px;
+    }
+
+    .left-bar-content{
+        justify-content: space-between;
+        height: calc(95% - 50px);
     }
 
     .home-page{
