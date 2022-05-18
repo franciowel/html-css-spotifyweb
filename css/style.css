@@ -27,6 +27,7 @@ body{
 .cover-contain{
     width: 95%;
     margin: 0 auto;
+    padding-top: 2.5rem;
 }
 
 /* MAIN */
@@ -124,6 +125,7 @@ main{
 .home-page{
     width: calc(100% - 250px);
     background-color: #141922;
+    overflow-y: auto;
 }
 
 .upper-menu ul{
@@ -139,12 +141,20 @@ main{
     font-size: 0.8rem;
 }
 
-.recently-played{
-    padding-top: 2.5rem;
+.recently-played h2,
+.for-you h2,
+.artist-search h2{
+    color: white;
 }
 
-.recently-played h2{
-    color: white;
+.for-you span,
+.artist-search span{
+    font-size: 0.8rem;
+    color: #a3a3a3;
+}
+
+.artist-search{
+    padding-bottom: 2.5rem;
 }
 
 .track-list{
@@ -175,6 +185,10 @@ main{
 .track-img img{
     width: 100%;
     align-self: center;
+}
+
+.artist-img img{
+    border-radius: 50%;
 }
 
 /* FOOTER */
