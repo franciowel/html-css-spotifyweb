@@ -19,6 +19,11 @@ body{
     display: flex;
 }
 
+.upper-menu-contain{
+    width: 70%;
+    margin: 0 auto;
+}
+
 /* MAIN */
 main{
     width: 100%;
@@ -116,6 +121,18 @@ main{
     background-color: #141922;
 }
 
+.upper-menu ul{
+    list-style: none;
+    justify-content: space-between;
+
+}
+
+.upper-menu ul li a{
+    text-decoration: none;
+    color: #a3a3a3;
+    font-size: 0.8rem;
+}
+
 /* FOOTER */
 footer{
     background-color: #282828;
@@ -127,6 +144,7 @@ footer{
 
 footer nav{
     background-color: #282828;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     height: 100%;
@@ -139,7 +157,7 @@ nav ul{
 
 /* BRANO IN RIPRODUZIONE */
 .song-section{
-    width: 25%;
+    /* width: 25%; */
 }
 
 .song-section ul li{
@@ -170,7 +188,7 @@ nav ul{
 /* COMANDI PLAYER */
 .command-section{
     flex-direction: column;
-    width: 50%;
+    width: 40%;
 }
 
 .commands{
@@ -191,13 +209,21 @@ nav ul{
 
 /* PARTE VOLUME */
 .command-volume{
-    width: 25%;
+    /* width: 25%; */
 }
 
 
 /* RESPONSIVE COMMAND */
 
 @media screen and (max-width: 600px) {
+
+    .left-bar{
+        width: 65px;
+    }
+
+    .home-page{
+        width: calc(100% - 65px);
+    }
     
     .logo :first-child{
         display: none;
