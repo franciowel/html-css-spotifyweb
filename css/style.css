@@ -150,6 +150,7 @@ main{
 
 .upper-menu ul li{
     width: calc(100% / 6);
+    text-align: center;
 
 }
 
@@ -212,11 +213,31 @@ main{
     position: absolute;
     top: 0;
     left: 0;
+}
 
+.play-track{
+    color: #a3a3a3;
+    text-align: center;
+    font-size: 2rem;
+    border: 3px solid #a3a3a3;
+    border-radius: 50%;
+    padding: 15px 2px;
+    height: 50%;
+    width: 50%;
+
+    display: none;
+    
 }
 
 .track:hover .overlay{
     display: inline-block;
+    
+}
+
+.track:hover .play-track{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .track-img{
