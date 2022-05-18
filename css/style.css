@@ -160,6 +160,18 @@ main{
 
 }
 
+.liner{
+    height: 2px;
+    width: 40px;
+    background-color: yellowgreen;
+    align-self: center;
+}
+
+.underlined{
+    flex-direction: column;
+    padding-top: 2px;
+}
+
 .upper-menu ul li{
     width: calc(100% / 6);
     text-align: center;
@@ -483,6 +495,19 @@ nav ul{
         padding: 0 0.5rem;
     }
 
+    .command-volume{
+        max-width: 150px;
+    }
+    .command-volume ul{
+        justify-content: space-between;
+    }
+
+    .track-bar-down{
+        max-width: 180px;
+        height: 4px;
+        background-color: #a3a3a3;
+    }
+
     
 }
 
@@ -493,6 +518,19 @@ nav ul{
     .track{
         width: calc(100% / 2);
         padding: 0.5rem 0.5rem;
+    }
+
+    .command-volume{
+        max-width: 100px;
+    }
+    .command-volume ul{
+        justify-content: space-between;
+    }
+
+    .track-bar-down{
+        max-width: 130px;
+        height: 4px;
+        background-color: #a3a3a3;
     }
     
     
@@ -546,6 +584,10 @@ nav ul{
 
     .info-user span{
         display: none;
+    }
+
+    .reaction{
+        flex-direction: column;
     }
 
     .upgrade{
