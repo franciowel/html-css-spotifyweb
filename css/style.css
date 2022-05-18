@@ -80,6 +80,11 @@ main{
     text-decoration: none;
 }
 
+.playlist a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
 .playlist li{
     line-height: 30px;
     font-size: 14px;
@@ -139,6 +144,10 @@ main{
     text-decoration: none;
     color: #a3a3a3;
     font-size: 0.8rem;
+}
+
+.upper-menu ul li a:hover{
+    color: white;
 }
 
 .recently-played h2,
