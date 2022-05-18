@@ -24,6 +24,11 @@ body{
     margin: 0 auto;
 }
 
+.cover-contain{
+    width: 95%;
+    margin: 0 auto;
+}
+
 /* MAIN */
 main{
     width: 100%;
@@ -124,6 +129,7 @@ main{
 .upper-menu ul{
     list-style: none;
     justify-content: space-between;
+    padding-top: 4rem;
 
 }
 
@@ -131,6 +137,14 @@ main{
     text-decoration: none;
     color: #a3a3a3;
     font-size: 0.8rem;
+}
+
+.recently-played{
+    padding-top: 2.5rem;
+}
+
+.recently-played h2{
+    color: white;
 }
 
 /* FOOTER */
